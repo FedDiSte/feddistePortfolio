@@ -1,0 +1,251 @@
+body {
+    background-color: #333533 !important;
+}
+
+.navButton {
+    border-style: none;
+}
+
+.navbar {
+    z-index: 1000;
+    background: none;
+}
+
+.primary {
+    background-color: #242423;
+    height: 960px;
+    padding: 20rem 20rem;
+    color: #eeeeee;
+}
+
+.navbar-collapse {
+    flex-grow: revert !important;
+}
+
+.nav-link {
+    border: transparent;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+}
+
+.nav-link.active {
+    border: #F24333;
+}
+
+.nameHeader{
+    font-size: 5vmax !important;
+}
+
+.namePhrase {
+    font-size: 3vmax !important;
+}
+
+.ico-column {
+    position: relative;
+}
+
+.ico-column img {
+    margin: 0.5em 1em;
+}
+
+.card {
+    width: 100%;
+    position: relative;
+    margin: 2em 0;
+    text-align: center;
+    background: #fafafa;
+    border: 1px solid #ebebeb;
+    box-shadow: rgba(0,0,0,0.14902) 0px 1px 1px 0px,rgba(0,0,0,0.09804) 0px 1px 2px 0px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 75% 25%;
+    transition: all 0.25s ease;
+    padding: 2em;
+}
+
+.cardButton {
+    background-color: #F24333;
+    border-radius: 5px;
+    border: 0;
+    padding: 1em;
+    width: 10px !important;
+}
+
+.cardButton a {
+    text-decoration: none;
+    color: #ebebeb;
+}
+
+.cardButton a:hover {
+    text-decoration: none;
+    color: #ebebeb;
+}
+
+.sectionTopic {
+    margin: 1em;
+}
+
+.skill-bars {
+    text-align: start;
+}
+
+.skill-bars .bar {
+    margin: 20px 0;
+}
+
+.skill-bars .bar:first-child {
+    margin-top: 0;
+}
+
+.skill-bars .bar .info {
+    margin-bottom: 5px;
+    color: #fff; 
+}
+
+.skill-bars .bar .info span {
+    font-weight: 500;
+    font-size: 17px;
+    opacity: 0;
+    animation: showText 0.5s 1s linear forwards;
+}
+
+@keyframes showText {
+    100% {
+        opacity: 1;
+    }
+}
+
+.skill-bars .bar .progress-line {
+    height: 10px;
+    width: 100%;
+    background: #242423;
+    position: relative;
+    transform: scaleX(0);
+    transform-origin: left;
+    border-radius: 10px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+@keyframes animate {
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+.bar .progress-line span {
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    background: #F24333;
+}
+
+.bar .progress-line span {
+    animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.bar .progress-line.html span {
+    width: 85%;
+}
+
+.bar .progress-line.css span {
+    width: 80%;
+}
+
+.bar .progress-line.java span {
+    width: 75%;
+}
+
+.bar .progress-line.js span {
+    width: 30%;
+}
+
+.bar .progress-line.py span {
+    width: 50%;
+}
+
+.bar .progress-line.php span {
+    width: 50%;
+}
+
+.bar .progress-line.sql span {
+    width: 30%;
+}
+
+.bar .progress-line.dart span {
+    width: 10%;
+}
+
+.progress-line span::after {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    font-weight: 500;
+    background: #F24333;
+    color: #fff;
+    padding: 1px 8px;
+    font-size: 12px;
+    border-radius: 30px;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+}
+
+@keyframes showText2 {
+    100% {
+        opacity: 1;
+    }
+}
+
+.bar .progress-line.html span::after {
+    content: "85%";
+}
+
+.bar .progress-line.css span::after {
+    content: "80%";
+}
+
+.bar .progress-line.java span::after {
+    content: "75%";
+}
+
+.bar .progress-line.js span::after {
+    content: "30%";
+}
+
+.bar .progress-line.py span::after {
+    content: "50%";
+}
+
+.bar .progress-line.php span::after {
+    content: "50%";
+}
+
+.bar .progress-line.sql span::after {
+    content: "30%";
+}
+
+.bar .progress-line.dart span::after {
+    content: "10%";
+}
+
+.content {
+    margin: 1em;
+}
+
+.space {
+    background-color: #242423;
+    padding: 2em;
+}
+
+.btn-red {
+    color: #fff  !important ;
+    background-color: #F24333  !important ;
+    border-color: #f23d2c  !important ;
+}
+
+.btn-red:hover {
+    color: #fff  !important ;
+    background-color: #E6210F  !important ;
+    border-color: #D31E0D  !important ;
+}
